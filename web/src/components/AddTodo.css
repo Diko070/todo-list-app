@@ -1,0 +1,75 @@
+.add-todo {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+  background: white;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.input {
+  flex: 1;
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.input:focus {
+  outline: none;
+  border-color: #667eea;
+  box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.1);
+}
+
+.category-select {
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  background: white;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.category-select:focus {
+  outline: none;
+  border-color: #667eea;
+}
+
+.btn-add {
+  background: #667eea;
+  color: white;
+  padding: 12px 20px;
+  border-radius: 5px;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.btn-add:hover {
+  background: #764ba2;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(102, 126, 234, 0.4);
+}
+
+.dark-mode .add-todo {
+  background: #2a2a3e;
+  color: white;
+}
+
+.dark-mode .input {
+  background: #1a1a2e;
+  color: white;
+  border-color: #444;
+}
+
+.dark-mode .category-select {
+  background: #1a1a2e;
+  color: white;
+  border-color: #444;
+}
+
+@media (max-width: 600px) {
+  .add-todo {
+    flex-direction: column;
+  }
+}
